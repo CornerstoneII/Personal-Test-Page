@@ -74,3 +74,17 @@ li #link-home a{
     border-width: 0 2px 0 1px;
     -webkit-border-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAABCAQAAABTNcdGAAAADUlEQVQIHWP4r8YABgAJCwEmqyi5lgAAAABJRU5ErkJggg%3D%3D') 0 2 0 1;
 }
+
+#search-form{
+    display: block;
+    position: relative;
+    padding: 0;
+    border: 0 none;
+    width: 100%;
+    height: auto;
+    color: #fff;
+    background-image: none;
+    background-color: rgba(255,255,255,.1);
+    border-radius: 12px;
+    box-shadow: rgba(0, 0, 0, 0.6) 0 2px 1px inset, rgba(255, 255, 255, 0.2) 0 1px 0;
+}
