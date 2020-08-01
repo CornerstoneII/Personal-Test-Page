@@ -194,7 +194,21 @@ section{
 }
 
 .title{
-    margin-bottom: -9px;
+    margin-bottom: -32px;
+}
+
+h1{
     font-size: 24px;
     line-height: 36px;
+}
+
+.subtext{
+    margin-bottom: 27px;
+}
+
+h2{
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: bold;
+    color: #000;
 }
