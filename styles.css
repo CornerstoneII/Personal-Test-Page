@@ -29,6 +29,8 @@ body{
     width: 845px;
     table-layout: fixed;
     position: relative;
+    margin: 0;
+    padding: 0;
 }
 
 ul{
@@ -60,4 +62,15 @@ ul{
 
 li #link-home a{
     background-position: 0 0;
+}
+
+#search-section{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 106px;
+    padding: 8px 13px;
+    background: none;
+    border-width: 0 2px 0 1px;
+    -webkit-border-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAABCAQAAABTNcdGAAAADUlEQVQIHWP4r8YABgAJCwEmqyi5lgAAAABJRU5ErkJggg%3D%3D') 0 2 0 1;
 }
