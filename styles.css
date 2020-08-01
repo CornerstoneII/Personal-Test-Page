@@ -1,0 +1,25 @@
+:root{
+    --background: #fff;
+}
+
+body{
+    background: var(--background);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, Helvetica, Arial;
+    font-size: 12px;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+#h-nav-section{
+    text-align: left;
+    border-radius: 4px;
+    z-index: 9998;
+    top: 18px;
+    margin: 0 auto;
+    position: relative;
+    display: block;
+    width: 980px;
+    box-shadow: rgba(0,0,0,0.3) 0 1px 2px;
+    background: url(/web/20140301004259im_/http://images.apple.com/global/nav/images/globalheader.png) repeat-x;
+}
