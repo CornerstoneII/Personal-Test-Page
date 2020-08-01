@@ -11,7 +11,10 @@ body{
     padding: 0;
 }
 
+/* Navigation Section */
+
 #h-nav-section{
+    background: #707070;
     text-align: left;
     border-radius: 4px;
     z-index: 9998;
@@ -22,4 +25,23 @@ body{
     width: 980px;
     box-shadow: rgba(0,0,0,0.3) 0 1px 2px;
     background: url(/web/20140301004259im_/http://images.apple.com/global/nav/images/globalheader.png) repeat-x;
+}
+
+#nav{
+    display: table;
+    float: left;
+    width: 845px;
+    table-layout: fixed;
+    position: relative;
+}
+
+ul{
+    list-style: none;
+}
+
+#nav li{
+    display: table-cell;
+    width: 100%;
+    overflow: hidden;
+    height: 36px;
 }
