@@ -90,3 +90,54 @@ ul{
     border-width: 0 2px 0 0;
     border-radius: 4px 0 0 4px;
 }
+
+/* li #apple a{
+    background-position: 0 0;
+} */
+
+#search-section{
+    text-align: left;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 106px;
+    padding: 8px 13px;
+    background: none;
+    border-width: 0 2px 0 1px;
+    -webkit-border-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAABCAQAAABTNcdGAAAADUlEQVQIHWP4r8YABgAJCwEmqyi5lgAAAABJRU5ErkJggg%3D%3D') 0 2 0 1;
+    background: url(http://images.apple.com/global/nav/images/globalsearch_bg.png) no-repeat 100% 0;
+}
+
+#search-form{
+    display: block;
+    position: relative;
+    padding: 0;
+    border: 0 none;
+    width: 100%;
+    height: auto;
+    color: #fff;
+    background-image: none;
+    background-color: rgba(255,255,255,.1);
+    border-radius: 12px;
+    box-shadow: rgba(0, 0, 0, 0.6) 0 2px 1px inset, rgba(255, 255, 255, 0.2) 0 1px 0;
+}
+
+.search-input{
+    margin: 0;
+}
+
+.search-input label{
+    display: none;
+}
+
+#search-input{
+    width: 100%;
+    height: 19px;
+    padding: 2px 18px 1px 22px;
+    background-image: none;
+    border-radius: 12px;
+    box-sizing: border-box;
+    color: #fff;
+    border: 0 none;
+    background: url(http://images.apple.com/global/nav/images/globalsearch_field.png) 0 0 no-repeat;
+}
