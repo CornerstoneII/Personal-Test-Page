@@ -141,3 +141,60 @@ ul{
     border: 0 none;
     background: url(http://images.apple.com/global/nav/images/globalsearch_field.png) 0 0 no-repeat;
 }
+
+section{
+    display: block;
+}
+
+.article-section{
+    top: 0;
+    right: 0;
+    bottom: 292px;
+    left: 0;
+    overflow: hidden;
+    display: block;
+}
+
+.center-header{
+    margin: auto;
+    /* left: 50%;
+    margin-left: -720px;
+    width: 1440px; */
+    background-size: 1440px 1315px;
+    z-index: -1;
+    background: url(https://web.archive.org/web/20140301004302im_/http://images.apple.com/v/home/as/images/your_verse_hero.jpg) 50% 100% no-repeat;
+}
+
+.lg-img{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.header-text{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    color: transparent;
+    font-size: 0;
+    line-height: 0;
+}
+
+.title-center{
+    background-size: 25px 335px;
+    right: 0;
+    left: 0;
+    margin-top: 170px;
+    padding: 50px 0;
+    background: url(http://images.apple.com/v/home/as/images/your_verse_scrim.png) 0 50% repeat-x;
+}
+
+.title{
+    margin-bottom: -9px;
+    font-size: 24px;
+    line-height: 36px;
+}
