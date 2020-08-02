@@ -1,238 +1,143 @@
-:root{
-    --background: #fff;
-}
+* {
+    box-sizing: border-box;
+  }
 
-body{
-    background: var(--background);
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, Helvetica, Arial;
+  body {
     font-size: 12px;
-    color: #333;
-    margin: 0;
-    padding: 0;
-    min-height: 830px;
-    max-height: 1472px;
-}
+    font-family: Arial, Helvetica, sans-serif;
+  }
 
-/* Navigation Section */
+  .fakeimg{
+    background-repeat: no-repeat;
+    height: 540px;
+    background: url(https://web.archive.org/web/20140301004302im_/http://images.apple.com/v/home/as/images/your_verse_hero.jpg) 50% 100% no-repeat;
+  }
 
-#h-nav-section{
-    margin-top: 155px;
-}
-
-.h-nav-section{
-    text-align: left;
-    border-radius: 4px;
-    top: 18px;
-    margin: 0 auto;
-    position: relative;
-    display: block;
-    width: 980px;
-    box-shadow: rgba(0, 0, 0, 0.3) 0 1px 2px;
-    background: linear-gradient(#8b8989 0%, #6d6d6d 50%, #585858 10%, #777 100%);
-    background-color: #6e6e6e;
-    height: 36px;
-}
-
-#nav{
-    display: table;
+  .leftcolumn {
     float: left;
-    width: 845px;
-    table-layout: fixed;
-    position: relative;
-    margin: 0;
-    padding: 0;
-    height: 36px;
-    z-index: 0;
+    width: 100%;
+    margin-bottom: 1px;
+  }
+
+  /* Float four columns side by side */
+  .column {
+    float: left;
+    width: 25%;
+    padding: 0 1px;
+  }
+
+  /* Remove extra left and right margins, due to padding */
+  .row {margin: 0 -5px;}
+
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+/* Style the counter cards */
+.card {
+        padding: 1px;
+        text-align: center;
+        background-color: #f1f1f1;
+    }
+
+/* Footer */
+.footer {
+        width: 100%;
+        padding: 0px;
+        text-align: center;
+        /* background: #ddd; */
+        margin-top: -4px;
+        color: #6e6e6e;
+        font-size: .8334em;
+        line-height: 1.2;
+        height: 90px;
+        position: absolute;
+        height: 90px;
+      }
+.footer-container{
+    margin: 0 auto;
+    width: 980px;
+    padding: 1em 0 2.6em;
+    }
+.footer-container ul{
+    padding: 0px;
+}
+
+.p-left{
+    float: left;
+    clear: both;
+    width: 49%;
+    padding-top: 1.5em;
+    text-align: left;
+}
+
+.p-right{
+    float: right;
+    width: 51%;
+    padding-top: 9px;
+    text-align: right;
+}
+
+.p-right .link1{
+    margin-left: 0;
+    padding-left: 0;
+    border-left: none;
+}
+
+.bottom-left .terms{
+    margin-left: 0;
+    padding-left: 0;
+    border-left: none;
+}
+
+.p-right li{
+    display: inline-block;
+    float: none;
+    margin-left: .6em;
+    padding-left: .6em;
+    border-left: 1px solid #ccc;
+    /* padding-left: 0px; */
 }
 
 ul{
-    list-style: none;
+    list-style-type: none;
+    margin: 0;
+    display: inline;
 }
 
-#nav-items{
-    height: 36px;
+.bottom-left ul{
+    padding: 0;
 }
 
-#nav li{
-    display: table-cell;
-    width: 100%;
-    overflow: hidden;
-    height: 36px;
+a{
+    color: #08c;
 }
 
-#nav li a{
-    cursor: pointer;
-    text-indent: 34px;
-    width: auto;
-    background: none;
-    display: block;
-    float: none;
+a:link{
     text-decoration: none;
-    border-style: solid;
-    outline: none;
-    -webkit-border-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAABCAQAAABTNcdGAAAAEUlEQVQIHWP4r8bA8F%2BKwQEADZUCf37PGokAAAAASUVORK5CYII%3D') 0 2 0 1;
 }
 
-.apple a span{
-    background-position: 50% 0;
-}
-
-.apple{
-    background: url(http://images.apple.com/global/nav/images/globalnav_text.png) no-repeat 50% 0;
-}
-
-#nav li a span{
-    display: block;
-    width: 100%;
-    margin: 3px auto;
-    color: #fff;
-}
-
-#nav li:first-child{
-    border-width: 0 2px 0 0;
-    border-radius: 4px 0 0 4px;
-}
-
-#search-section{
-    text-align: left;
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 106px;
-    padding: 8px 13px;
-    background: none;
-    border-width: 0 2px 0 1px;
-    -webkit-border-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAABCAQAAABTNcdGAAAADUlEQVQIHWP4r8YABgAJCwEmqyi5lgAAAABJRU5ErkJggg%3D%3D') 0 2 0 1;
-    background: url(http://images.apple.com/global/nav/images/globalsearch_bg.png) no-repeat 100% 0;
-}
-
-#search-form{
-    display: block;
-    position: relative;
-    padding: 0;
-    border: 0 none;
-    width: 100%;
-    height: auto;
-    color: #fff;
-    background-image: none;
-    background-color: rgba(255,255,255,.1);
-    border-radius: 12px;
-    box-shadow: rgba(0, 0, 0, 0.6) 0 2px 1px inset, rgba(255, 255, 255, 0.2) 0 1px 0;
-}
-
-.search-input{
+.footer p{
+    display: inline;
     margin: 0;
 }
 
-.search-input label{
-    display: none;
+.copyright-link li{
+    display: inline-block;
+    float: none;
+    margin-left: .6em;
+    padding-left: .6em;
+    border-left: 1px solid #ccc;
 }
 
-#search-input{
-    width: 100%;
-    height: 19px;
-    padding: 2px 18px 1px 22px;
-    background-image: none;
-    border-radius: 12px;
-    box-sizing: border-box;
-    color: #fff;
-    border: 0 none;
-    background: url(http://images.apple.com/global/nav/images/globalsearch_field.png) 0 0 no-repeat;
-}
-
-section{
-    display: block;
-}
-
-/* .article-section{
-    top: 0;
-    right: 0;
-    bottom: 292px;
-    left: 0;
-    overflow: hidden;
-    display: block;
-} */
-
-.center-header{
-    margin: auto;
-    z-index: -1;
-    background: url(https://web.archive.org/web/20140301004302im_/http://images.apple.com/v/home/as/images/your_verse_hero.jpg) 50% 100% no-repeat;
-}
-
-.lg-img{
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-}
-
-.header-text{
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    color: transparent;
-    font-size: 0;
-    line-height: 0;
-}
-
-.title-center{
-    background-size: 25px 335px;
-    right: 0;
-    left: 0;
-    margin-top: 170px;
-    padding: 50px 0;
-    background: url(http://images.apple.com/v/home/as/images/your_verse_scrim.png) 0 50% repeat-x;
-}
-
-.title{
-    margin-bottom: -32px;
-}
-
-h1{
-    font-size: 24px;
-    line-height: 36px;
-}
-
-.subtext{
-    margin-bottom: 27px;
-}
-
-h2{
-    font-size: 16px;
-    line-height: 18px;
-    font-weight: bold;
-    color: #000;
-}
-
-.last-text{
-    position: relative;
-    z-index: 10;
-    overflow: hidden;
-    height: 31px;
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
-    text-align: center;
-}
-
-/* Promo-Section */
-
-.footer{
-    position: absolute;
-    z-index: 1;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    margin: 0;
-    min-width: 980px;
-    width: 100%;
-    height: 90px;
-    padding: 0;
-    color: #6e6e6e;
-    font-size: .8334em;
-    line-height: 1.2;
-    text-align: center;
-}
+  /* Responsive columns */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
